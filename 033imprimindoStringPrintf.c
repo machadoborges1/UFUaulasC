@@ -7,7 +7,7 @@ int main(){
 
     printf("A string é: %s", texto);
     printf("A string é: %s", texto2); // exemplo
-    printf("A primeira letra é: %c", texto2[0]); // e
+    printf("A primeira letra é: x%c", texto2[0]); // e
 
 return 0;
 }
