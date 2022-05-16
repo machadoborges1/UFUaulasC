@@ -18,6 +18,15 @@ int main(){
     - Estável: Não altera ordem de dados iguais
     - Desvantagem: como escolher o pivô?
     */
+
+    void quickSort(int *V, int inicio, int fim){
+        int pivo;
+        if(fim > inicio) {
+            pivo = parciona(V, inicio, fim);
+            quickSort(V, inicio, pivo-1);
+            quickSort(V, pivo+1, fim);
+        }
+    }
     
     int parciona(int *V, int inicio, int final){
 
