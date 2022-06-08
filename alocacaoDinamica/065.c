@@ -8,7 +8,7 @@
 int main(){
 
     int **p;
-    int i, j, N = 2;
+    int i, j, N = 10;
 
     // criar um array de ponteiros (int *)
     p = (int **) malloc(N * sizeof(int*));
@@ -27,4 +27,28 @@ int main(){
         free(p[i]);
     }
     free(p);
+}
+
+int cubo(){
+
+    int ***pt;
+    int i, j, k, N=10 ;
+
+    pt = (int ***) malloc(N * sizeof(int **));
+    
+    for(k = 0; k < N; k++){
+        pt[k] = (int **) malloc(N * sizeof(int*));
+
+        for (i = 0; i < N; i++){
+            pt[i] = (int *) malloc(N * sizeof(int));
+
+            for (j = 0; j < N; j++)
+                scanf("%d", &pt[k][i][j]);
+        }
+    }
+
+    for (int k = 0; k < N; k++){
+        for (int i = 0; i < N; i++){
+        }
+    } 
 }
