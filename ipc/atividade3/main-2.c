@@ -33,7 +33,7 @@ int main(){
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(busca == A[i][j]){
-                    printf("posição[%d][%d]", i, j);
+                    printf("posição[%d][%d]\n", i, j);
                 }
             }
         }

@@ -69,5 +69,14 @@ int main(){
         printf("\n");
     }
 
+    for(int i=0; i < 5; i++){
+        free(A[i]);
+        free(B[i]);
+        free(RESULTADO[i]);
+    }
+    free(A);
+    free(B);
+    free(RESULTADO);
+
     return 0;
 }
