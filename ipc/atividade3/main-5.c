@@ -1,3 +1,5 @@
+//Humberto Machado Borges Neto - 12121BSI205
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -23,10 +25,10 @@ int main(){
 
     // imprimir as 5 matrizes
     for(int k=0; k<5; k++){
-        printf("Matriz %d", k+1);
-        for(int j=0; j<6; j++){
-            for(int i=0; i<7; i++){
-                printf("%d\t", mat[j][i][k]);
+        printf("Matriz - %d \n", k+1);
+        for(int i=0; i<6; i++){
+            for(int j=0; j<7; j++){
+                printf("%3d", mat[j][i][k]);
             }  
             printf("\n");
         }
@@ -43,25 +45,3 @@ int main(){
 
     return 0;
 }
-
-/*
-
-  for(int i = 0; i < profundidade; i++){
-    printf("Camada %d:\n", i+1);
-    for(int j = 0; j < largura; j++){    // linhas
-      for(int k = 0; k < altura; k++){   // colunas
-        // j k i precisa estar nessa ordem pra imprimir corretamente
-        printf("%d ", cubo[j][k][i]); 
-      }
-      printf("\n");
-    }
-    printf("\n\n");
-  }
-
-  // Liberando a matriz
-  for(int i = 0; i < largura; i++){
-    for(int j = 0; j < altura; j++)
-      free(cubo[i][j]);
-    free(cubo[i]);
-  }
-  free(cubo);
